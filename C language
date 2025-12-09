@@ -1,0 +1,442 @@
+1
+
+#include <stdio.h>
+int main() {
+    int a = 10, b = 20, c = 30;
+    printf("a = %d\nb = %d\nc = %d", a, b, c);
+    return 0;
+}
+
+
+2
+
+#include <stdio.h>
+int main() {
+    printf("C language is a powerful programming language.");
+    return 0;
+}
+
+3
+
+#include <stdio.h>
+int main() {
+    int a = 5, b = 10, temp;
+    temp = a;
+    a = b;
+    b = temp;
+
+    printf("a = %d\nb = %d", a, b);
+    return 0;
+}
+
+
+4
+
+#include <stdio.h>
+int main() {
+    int year = 3;
+    int months = year * 12;
+
+    printf("Months = %d", months);
+    return 0;
+}
+
+
+5
+
+#include <stdio.h>
+int main() {
+    int a, b;
+    printf("Enter first number: ");
+    scanf("%d", &a);
+    printf("Enter second number: ");
+    scanf("%d", &b);
+
+    printf("Sum = %d\n", a + b);
+    printf("Product = %d", a * b);
+    return 0;
+}
+
+
+6
+
+#include <stdio.h>
+int main() {
+    int age, months;
+    printf("Enter age in years: ");
+    scanf("%d", &age);
+
+    months = age * 12;
+    printf("Age in months = %d", months);
+    return 0;
+}
+
+
+7
+
+
+#include <stdio.h>
+int main() {
+    int pf, ic, cg, total;
+    float average;
+    float roll;
+
+    printf("Enter Roll No: ");
+    scanf("%f", &roll);
+    printf("PF marks: ");
+    scanf("%d", &pf);
+    printf("IC marks: ");
+    scanf("%d", &ic);
+    printf("CG marks: ");
+    scanf("%d", &cg);
+
+    total = pf + ic + cg;
+    average = total / 3.0;
+
+    printf("Total = %d\n", total);
+    printf("Average = %.2f", average);
+    return 0;
+}
+
+
+8
+
+#include <stdio.h>
+int main() {
+    float f, c;
+    printf("Enter Fahrenheit: ");
+    scanf("%f", &f);
+
+    c = (5.0/9.0) * (f - 32);
+    printf("Celsius = %.2f", c);
+    return 0;
+}
+
+
+9
+
+#include <stdio.h>
+int main() {
+    int a, b, c, d, max;
+    scanf("%d %d %d %d", &a, &b, &c, &d);
+
+    max = a;
+    if (b > max) max = b;
+    if (c > max) max = c;
+    if (d > max) max = d;
+
+    printf("Maximum = %d", max);
+    return 0;
+}
+
+
+10
+
+#include <stdio.h>
+int main() {
+    float miles = 2.5;
+    float km = miles * 1.609;
+
+    printf("Kilometers = %.3f", km);
+    return 0;
+}
+
+
+11
+
+#include <stdio.h>
+int main() {
+    int a = 10, b = 20;
+    float avg;
+
+    avg = (a + b) / 2.0;
+    printf("Average = %.2f", avg);
+    return 0;
+}
+
+
+12
+
+#include <stdio.h>
+int main() {
+    const float PI = 3.1417;
+    float r, h, volume;
+
+    printf("Enter radius: ");
+    scanf("%f", &r);
+    printf("Enter height: ");
+    scanf("%f", &h);
+
+    volume = PI * r * r * h;
+    printf("Volume = %.2f", volume);
+    return 0;
+}
+
+
+13
+
+#include <stdio.h>
+#define PI 3.1417
+
+int main() {
+    float r, area;
+    printf("Enter radius: ");
+    scanf("%f", &r);
+
+    area = PI * r * r;
+    printf("Area = %.2f", area);
+    return 0;
+}
+
+
+14
+
+#include <stdio.h>
+int main() {
+    float mm, inches;
+    printf("Enter millimeters: ");
+    scanf("%f", &mm);
+
+    inches = mm / 25.4;
+    printf("Inches = %.2f", inches);
+    return 0;
+}
+
+
+15
+
+#include <stdio.h>
+int main() {
+    int a, b, temp;
+    scanf("%d %d", &a, &b);
+
+    temp = a;
+    a = b;
+    b = temp;
+
+    printf("a=%d b=%d", a, b);
+    return 0;
+}
+
+
+16
+
+#include <stdio.h>
+int main() {
+    int a = 3, b = 3, c = 3;
+    int product = a * b * c;
+
+    printf("Product = %d", product);
+    return 0;
+}
+
+
+17
+
+#include <stdio.h>
+int main() {
+    float num = 15.58971;
+    int int_part;
+    float frac_part;
+
+    int_part = (int)num;
+    frac_part = num - int_part;
+
+    printf("Integer part = %d\n", int_part);
+    printf("Fractional part = %.5f", frac_part);
+    return 0;
+}
+
+
+18
+
+#include <stdio.h>
+int main() {
+    float vi, t, a, s;
+    scanf("%f %f %f", &vi, &t, &a);
+
+    s = (vi * t) + (0.5 * a * t * t);
+
+    printf("S = %.2f", s);
+    return 0;
+}
+
+
+19
+
+#include <stdio.h>
+int main() {
+    int age, months, days;
+    scanf("%d", &age);
+
+    months = age * 12;
+    days = age * 365;
+
+    printf("Months=%d\nDays=%d", months, days);
+    return 0;
+}
+
+
+20
+
+#include <stdio.h>
+int main() {
+    printf("C:\\Windows>\n");
+    printf("'P'\t'A'\t'K'\n");
+    printf("\"Pakistan\"");
+    return 0;
+}
+
+
+21
+
+#include <stdio.h>
+int main() {
+    printf("XXXXX\nXXXX\nXXX\nXX\nX");
+    return 0;
+}
+
+
+
+22
+
+
+#include <stdio.h>
+int main() {
+    char name[50], gender[10];
+    int age;
+    float height;
+
+    printf("Enter name: ");
+    scanf("%s", name);
+    printf("Enter age: ");
+    scanf("%d", &age);
+    printf("Enter height: ");
+    scanf("%f", &height);
+    printf("Enter gender: ");
+    scanf("%s", gender);
+
+    printf("Name: %s\nAge: %d\nHeight: %.2f\nGender: %s", name, age, height, gender);
+    return 0;
+}
+
+
+23
+
+#include <stdio.h>
+#define PI 3.1417
+
+int main() {
+    float r, area, cir;
+    scanf("%f", &r);
+
+    area = PI * r * r;
+    cir = 2 * PI * r;
+
+    printf("Area=%.2f\nCircumference=%.2f", area, cir);
+    return 0;
+}
+
+
+24
+
+#include <stdio.h>
+int main() {
+    int m1, m2, m3, m4, m5, total;
+    float avg;
+
+    scanf("%d %d %d %d %d", &m1, &m2, &m3, &m4, &m5);
+
+    total = m1 + m2 + m3 + m4 + m5;
+    avg = total / 5.0;
+
+    printf("Total=%d\nAverage=%.2f", total, avg);
+    return 0;
+}
+
+
+25
+
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    float a, b, c, s, area;
+    scanf("%f %f %f", &a, &b, &c);
+
+    s = (a + b + c) / 2;
+    area = sqrt(s * (s - a) * (s - b) * (s - c));
+
+    printf("Area=%.2f", area);
+    return 0;
+}
+
+
+26
+
+#include <stdio.h>
+int main() {
+    float rupees = 12000;
+    float dollars = rupees / 60;
+
+    printf("Dollars = %.2f", dollars);
+    return 0;
+}
+
+
+27
+
+#include <stdio.h>
+int main() {
+    int h, m, s, total;
+    scanf("%d %d %d", &h, &m, &s);
+
+    total = (h * 3600) + (m * 60) + s;
+
+    printf("Total Seconds = %d", total);
+    return 0;
+}
+
+
+28
+
+#include <stdio.h>
+int main() {
+    float a, b, c, disc;
+    scanf("%f %f %f", &a, &b, &c);
+
+    disc = (b * b) - (4 * a * c);
+
+    printf("Discriminant = %.2f", disc);
+    return 0;
+}
+
+
+29
+
+#include <stdio.h>
+int main() {
+    int n;
+    scanf("%d", &n);
+
+    if (n > 100) {
+        printf("n is greater than 100");
+    }
+    return 0;
+}
+
+
+30
+
+#include <stdio.h>
+int main() {
+    int n;
+    scanf("%d", &n);
+
+    if (n % 2 == 0)
+        printf("Even");
+    else
+        printf("Odd");
+
+    return 0;
+}
