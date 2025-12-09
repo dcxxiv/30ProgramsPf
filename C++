@@ -1,0 +1,527 @@
+1
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a = 1 , b = 10 , c = 20;
+    cout<<"a ="<<a<<endl;
+    cout<<"b ="<<b<<endl;
+    cout<<"c ="<<c<<endl;
+
+    return 0;
+}
+
+
+2
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    cout<<"C is powefull programmimg language."; //print a message
+    return 0;
+}
+
+3
+
+#include <iostream>
+using namespace std;
+int main()
+{   int a = 1 , b = 2,temp;
+    temp = a;
+    a = b;
+    b = temp;
+    cout<<"values after interchanging:"<<endl;
+    cout<<"a = "<< a << ", b = " << b << endl;
+    return 0;
+}
+4
+
+#include <iostream>
+using namespace std;
+int main()
+{   int year = 4;
+    int months;
+    months = year*12;
+    cout<< "year = " << year << endl;
+    cout<< "Months = " << months << endl;
+    return 0;
+}
+
+5
+
+#include <iostream>
+using namespace std;
+int main()
+{   int a = 2, b = 4;
+    int sum , product;
+    sum = a + b;
+    product = a * b;
+    cout<<"sum = "<< sum << endl;
+    cout<<"product = "<< product<< endl;
+    return 0;
+}
+
+6
+
+#include <iostream>
+using namespace std;
+int main()
+{   int age = 20;
+    int months;
+    months = age * 12;
+    cout<<"age in months = " << months << endl;
+    return 0;
+}
+
+7
+
+#include <iostream>
+using namespace std;
+int main()
+{   int rollNo = 239;
+    float PF ,calculus , AI;
+    float  total ,average;
+    cout<<"Enter rollNo = ";
+    cin >> rollNo;
+    cout<<"Enter marks in PF = ";
+    cin >> PF;
+    cout<<"Enter marks in calculus = ";
+    cin >> calculus;
+    cout<<"Enter marks in AI = ";
+    cin >> AI;
+    total = PF + calculus + AI;
+    average = total/3;
+    cout<<"rollNO = " << rollNo << endl;
+    cout<<"average marks = " << average << endl;
+    cout<<"total marks = " << total << endl;
+    
+    return 0;
+}
+
+8
+
+#include<iostream>
+using namespace std;
+int main()
+{   float celcius,farehnheit ;
+    cout<<"Enter temp in farehnheit =";
+    cin>>farehnheit;
+    celcius = (farehnheit-32) *5.0/9.0;
+    cout<<"temp in celcius = " <<celcius<<endl;
+
+    return 0;
+}
+
+9
+
+#include<iostream>
+using namespace std;
+int main()
+{   int a, b, c, d, max;
+    cout<<"Enter four numbers=";
+    cin>> a>> b>> c>>d ;
+    max = a;  //if a is maximum
+    if(b>max)
+      max=b;
+    if(c>max)
+      max=c;
+    if(d>max)
+      max=d;
+    cout<<"maximum number is = "<<max <<endl;
+
+    return 0;
+}
+
+10
+
+#include <iostream>
+using namespace std;
+int main()
+{   float miles , kilometers;
+    cout<<"Enter miles = ";
+    cin>>miles;
+    kilometers = miles * 1.609;
+    cout<<"kilometers = "<<kilometers;
+    return 0;
+}
+
+11
+
+#include <iostream>
+using namespace std;
+int main()
+{  int a , b ;
+   float average;
+   cout<<"Enter value of a = ";
+   cin>>a;
+   cout<<"Enter value of b = ";
+   cin>>b;
+   average = (a+b)/2;
+   cout<<"average is = "<<average;
+   return 0;
+   
+}
+
+12
+
+#include <iostream>
+const float PI = 3.1417;
+using namespace std;
+int main()
+{   int radius , height ,volume ;    //Volume =Ï€R^2 xH 
+    cout<<"Enter radius = ";
+    cin>>radius;
+    cout<<"Enter height = ";
+    cin>>height;
+    volume = PI*radius*radius*height;
+    cout<<"Volume is = "<<volume;
+
+    return 0;
+}
+
+13
+
+#include <iostream>
+#define PI 3.1417;
+using namespace std;
+int main()
+{   float area , radius;
+    cout<<"Enter radius = ";
+    cin>>radius;
+    area = 3.1417*radius*radius;
+    cout<<"Area of circle is = "<<area;
+
+    return 0;
+}
+
+14
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    float mm, inches;
+    cout<<"Enter values in millimeters = ";
+    cin>>mm;
+    inches = mm/25.4;
+    cout<<"value in inches is "<<inches;
+   
+
+    return 0;
+}
+
+15
+
+
+#include <iostream>
+using namespace std;
+int main()
+{   int a = 10, b = 20, temp;
+    temp = a;
+    a = b;
+    b = temp;
+    cout<<"Values after interchange:"<<endl;
+    cout<<"a = "<< a <<" b = "<< b;
+
+    return 0;
+}
+
+
+16
+
+#include <iostream>
+using namespace std;
+int main()
+{   
+    int a = 3, b = 3, c = 3;
+    int product;
+    cout<<"Product of these number is = "<<product<<endl;
+    product = a * b * c;
+
+    return 0;
+}
+
+
+17
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    float num = 17.799943;
+    int integral;
+    float fractional;
+    
+    integral = int(num);
+    fractional = num - integral;
+    
+    cout<<"original num is "<<num<<endl;
+    cout<<"integral num is "<<integral<<endl;
+    cout<<"fractional num is "<<fractional<<endl;
+    
+    return 0;
+}
+
+
+18
+
+#include <iostream>
+using namespace std;
+int main()
+{   int vi = 10;
+    int t = 5;
+    int a = 3;
+    int s;
+    s = vi * t + (0.5*a*t*t);
+    cout<<"value of s is "<<s;
+
+    return 0;
+}
+
+19
+
+#include <iostream>
+using namespace std;
+int main()
+{   int age = 20, months, days;
+    months = 12 * age;
+    days = 365 * age;
+    cout<<"age in months = "<<months<<endl;
+    cout<<"age in days = "<<days;
+    
+
+    return 0;
+}
+
+
+20
+
+#include <iostream>
+using namespace std;
+int main()
+{   
+    cout<<"C:\\Windows>"<<endl;
+    cout<<"'P'\t'A'\t'K'"<<endl;
+    cout<< "\"Pakistan\""<<endl;
+
+    return 0;
+}
+
+21
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    cout<<"XXXXX\nXXXX\nXXX\nXX\nX";
+
+    return 0;
+}
+
+
+22
+
+#include <iostream>
+using namespace std;
+int main()
+{   string name;
+    int age;
+    float height;
+    char gender;
+    cout<<"Enter your name:"<<endl;
+    getline(cin,name);
+    cout<<"Enter your age:"<<endl;
+    cin>>age;
+    cout<<"Enter your height(in cm):"<<endl;
+    cin>>height;
+    cout<<"Enter your gender(M/F):"<<endl;
+    cin>>gender;
+    
+    cout<<"student detail:\n";
+    cout<<"name is :"<<name<<endl;
+    cout<<"age is :"<<age<<endl;
+    cout<<"height  is :"<<height<<endl;
+    cout<<"gender is :"<<gender<<endl;
+    
+
+    return 0;
+}
+
+
+23
+
+#include <iostream>
+using namespace std;
+int main()
+{   
+    float area ,circumference,radius;
+    const float PI = 3.14;
+    cout<<"Enter radius = ";
+    cin>>radius;
+    
+    area = PI*radius*radius;
+    circumference = 2*PI*radius;
+   
+    cout<<"Area of circle is "<<area<<endl;
+    cout<<"circumference of circle is "<<circumference<<endl;
+
+
+    return 0;
+}
+
+
+24
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    float m1,m2,m3,m4,m5;
+    float total , average;
+    cout<<"Enter marks of 1st subject = ";
+    cin>>m1;
+    cout<<"Enter marks of 2nd subject = ";
+    cin>>m2;
+    cout<<"Enter marks of 3rd subject = ";
+    cin>>m3;
+    cout<<"Enter marks of 4th subject = ";
+    cin>>m4;
+    cout<<"Enter marks of 5th subject = ";
+    cin>>m5;
+    
+    total = m1+m2+m3+m4+m5;
+    average = total/5;
+    
+    cout<<"total marks " <<total<<endl;
+    cout<<"average is " <<average<<endl;
+
+    return 0;
+}
+
+
+25
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main()
+{
+    float a, b, c;
+    float s, area;
+    cout<<"Enter side a"<<endl;
+    cin>>a;
+    cout<<"Enter side b"<<endl;
+    cin>>b;
+    cout<<"Enter side c"<<endl;
+    cin>>c;
+    
+    s = (a + b + c) / 2;
+    area = sqrt(s * (s - a) * (s - b) * (s - c));
+    
+    cout<<"Area of triangle is = " <<area<<endl;
+    return 0;
+}
+
+
+26
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    float rupees = 12000;
+    float dollorRate = 60;
+    float dollors;
+    
+    dollors = rupees/dollorRate;
+    cout<<"12000 rupees in dollors = " <<dollors<<endl;
+
+    return 0;
+}
+
+
+27
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    int hour , minute , second ,totalTime;
+    
+    cout<<"Enter hour = ";
+    cin>>hour;
+    cout<<"Enter minute = ";
+    cin>>minute;
+    cout<<"Enter second = ";
+    cin>>second;
+    
+    totalTime = hour*3600+minute*60+second;
+    
+    cout<<"Total time in seconds is =" <<totalTime<<endl;
+
+
+    return 0;
+}
+
+
+28
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a, b, c, disc;
+    cout<<"Enter a = ";
+    cin>>a;
+    cout<<"Enter b = ";
+    cin>>b;
+    cout<<"Enter c = ";
+    cin>>c;
+    
+    disc =b*b-4*a*c;
+    
+    cout<<"Disc is = " <<disc;
+
+    return 0;
+}
+
+29
+
+#include <iostream>
+using namespace std;
+int main()
+{  
+    int n;
+    
+    cout<<"Enter value of n = ";
+    cin>>n;
+    
+    if(n>100)
+    {
+        cout<<"The value of n is greater then 100.";
+    }
+    
+    return 0;
+}
+
+30
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    int n;
+    
+    cout<<"Enter value of n = ";
+    cin>>n;
+    
+    if(n % 2 == 0)
+      cout<<n<<" is even.";
+    if(n % 2 != 0)
+      cout<<n<<" is odd.";
+    
+
+    return 0;
+}
+
